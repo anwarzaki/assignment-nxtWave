@@ -1,28 +1,39 @@
 // import './globals.css';
-// import { AuthProvider } from '../components/context/AuthContext';
+// import { ClerkProvider } from '@clerk/nextjs';
+
+// export const metadata = {
+//   title: 'Your App Name',
+//   description: 'Your app description',
+// };
 
 // export default function RootLayout({ children }) {
 //   return (
-//     <html lang="en">
-//       <body>
-//         <AuthProvider>
+//     <ClerkProvider>
+//       <html lang="en">
+//         <body>
 //           {children}
-//         </AuthProvider>
-//       </body>
-//     </html>
+//         </body>
+//       </html>
+//     </ClerkProvider>
 //   );
 // }
 
+
 import './globals.css';
-import { AuthProvider } from '../components/context/AuthContext';
+import { ClerkProvider } from '@clerk/nextjs';
+
+export const metadata = {
+  title: 'Your App Name',
+  description: 'Your app description',
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <AuthProvider>
+        <ClerkProvider>
           {children}
-        </AuthProvider>
+        </ClerkProvider>
       </body>
     </html>
   );
