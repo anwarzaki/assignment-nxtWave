@@ -1,0 +1,278 @@
+/* .footer {
+  background: black;
+  color: white;
+  padding: 3rem 2rem 1rem;
+  font-size: 0.9rem;
+}
+
+.newsletter {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.newsletter h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter p {
+  margin-bottom: 1.5rem;
+}
+
+.subscribe {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.subscribe input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  border-right: none;
+  font-size: 0.9rem;
+}
+
+.subscribe button {
+  padding: 0 2rem;
+  background: #000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.mainFooter {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+}
+
+.footerSection {
+  margin-bottom: 1.5rem;
+}
+
+.footerSection h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.footerSection p, 
+.footerSection li {
+  margin-bottom: 0.7rem;
+  line-height: 1.5;
+}
+
+.footerSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerSection li {
+  cursor: pointer;
+}
+
+.footerSection li:hover {
+  text-decoration: underline;
+}
+
+.paymentMethods {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.paymentMethods span {
+  background: #fff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid #ddd;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .mainFooter {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .subscribe {
+    flex-direction: column;
+  }
+  
+  .subscribe input {
+    border-right: 1px solid #ddd;
+    border-bottom: none;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainFooter {
+    grid-template-columns: 1fr;
+  }
+} */
+
+
+.footer {
+  background: black;
+  color: white;
+  padding: 3rem 2rem 1rem;
+  font-size: 0.9rem;
+}
+
+.newsletter {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #444;
+}
+
+.newsletter h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter p {
+  margin-bottom: 1.5rem;
+}
+
+.subscribe {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.subscribe input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  border-right: none;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.subscribe button {
+  padding: 0 2rem;
+  background: #fff;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
+}
+
+.subscribe button:hover {
+  background: #333;
+  color: white;
+}
+
+.mainFooter {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+}
+
+.footerSection {
+  margin-bottom: 1.5rem;
+}
+
+.footerSection h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.footerSection p,
+.footerSection li {
+  margin-bottom: 0.7rem;
+  line-height: 1.5;
+}
+
+.footerSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerSection li {
+  cursor: pointer;
+  transition: text-decoration 0.2s;
+}
+
+.footerSection li:hover {
+  text-decoration: underline;
+}
+
+.paymentMethods {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.paymentMethods span {
+  background: #fff;
+  color: #000;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid #444;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .mainFooter {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .subscribe {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .subscribe input {
+    border: 1px solid #ddd;
+    border-right: none;
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  .subscribe button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainFooter {
+    grid-template-columns: 1fr;
+  }
+
+  .paymentMethods {
+    justify-content: center;
+  }
+}
